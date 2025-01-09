@@ -1,1 +1,27 @@
-<p>login works!</p>
+<img src="assets/YourCarYourWay.png" alt="YourCarYourWay logo">
+<mat-card>
+    <mat-card-content>
+        <form class="list">
+            <p>Se connecter</p>
+
+            <mat-form-field appearance="outline">
+                <mat-label>E-mail</mat-label>
+                <input matInput [(ngModel)]="user.email" name="email">
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Mot de passe</mat-label>
+                <input matInput [(ngModel)]="user.password" name="password">
+            </mat-form-field>
+
+            <p *ngIf="showError" class="error">
+                L'adresse e-mail ou le mot de passe est invalide !
+            </p>
+
+            <button mat-flat-button color="primary" type="submit" (click)="onSubmit()" [disabled]="!isFormValid()">
+                Se connecter
+            </button>
+
+        </form>
+    </mat-card-content>
+</mat-card>

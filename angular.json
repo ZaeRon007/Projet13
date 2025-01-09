@@ -31,10 +31,8 @@
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
+              "src/assets",
+              "src/assets/YourCarYourWay.png"
             ],
             "styles": [
               "@angular/material/prebuilt-themes/magenta-violet.css",

@@ -1,0 +1,21 @@
+img {
+    display: flex;
+    height: 250px;
+    justify-self: center;
+}
+
+.list {
+    display: flex;    
+    flex-direction: column;
+    align-items: center;
+}
+
+mat-card {
+    --mdc-elevated-card-container-color: white;
+    --mdc-outlined-text-field-label-text-color: black;
+    --mdc-filled-button-label-text-color: black;
+    --mdc-outlined-text-field-input-text-color: black;
+    --mdc-filled-button-disabled-label-text-color: black;
+    --mdc-filled-button-disabled-container-color: grey;
+    --mdc-elevated-card-container-elevation: none;
+}
