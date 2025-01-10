@@ -19,11 +19,19 @@ export class sessionService {
     constructor() {
     }
 
+    /**
+     * Allow to logIn a user
+     * @param inputUser user
+     */
     logInUser(inputUser: userEntity): void {
         console.log('logIn user:', inputUser);
         this.user = inputUser;
     }
 
+    /**
+     * save all users
+     * @param inputUsers users
+     */
     saveConnectedUsers(inputUsers: userEntity[]): void {
         console.log('saveConnectedUsers user:', inputUsers);
         this.users = inputUsers;

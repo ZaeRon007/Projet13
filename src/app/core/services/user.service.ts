@@ -18,10 +18,19 @@ export class UserService {
                 private router: Router) {
     }
 
+    /**
+     * return an asynchronous response from request
+     * @returns content of users.json file
+     */
     getUsers(): Observable<userEntity[]> {
         return this.http.get<userEntity[]>(this.usersUrl);
     }
 
+    /**
+     * allow to log in a user checking if credentials are equals to those in users.json file
+     * @param inputUser user to logIn
+     * @returns a boolean : return true if user is logIn, false if there is an error
+     */
     login(inputUser: userLogin): boolean {
         this.getUsers().subscribe({
             next: (users) => {
