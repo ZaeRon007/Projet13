@@ -12,12 +12,14 @@ import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { ChatComponent } from "./components/chat/chat.component";
 import { LoginComponent } from "./components/login/login.component";
+import { HomeComponent } from './components/home/home.component';
 
 
 @NgModule({
     declarations: [
       ChatComponent,
-      LoginComponent
+      LoginComponent,
+      HomeComponent
     ],
     imports: [
       CommonModule,
