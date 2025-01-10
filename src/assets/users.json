@@ -4,7 +4,7 @@
       "username": "support",
       "password": "test1234!",
       "email": "support@yourcaryourway.com",
-      "photoUrl": "https://talkjs.com/images/avatar-1.jpg",
+      "pictureUrl": "https://talkjs.com/images/avatar-1.jpg",
       "role": "admin"
     },
     {
@@ -12,7 +12,7 @@
       "username": "ducrass",
       "password": "test1234!",
       "email": "pere.ducrass@gmail.com",
-      "photoUrl": "https://talkjs.com/images/avatar-4.jpg",
+      "pictureUrl": "assets/pereDucrass.png",
       "role": "default"
     }
 ]
