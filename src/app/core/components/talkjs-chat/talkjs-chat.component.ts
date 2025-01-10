@@ -12,7 +12,6 @@ import Talk from 'talkjs';
 export class TalkjsChatComponent {
   @ViewChild('talkjsContainer') talkjsContainer!: ElementRef;
   private inbox!: Talk.Inbox;
-  private session!: Talk.Session;
 
   constructor(private talkService: TalkService) {
   }

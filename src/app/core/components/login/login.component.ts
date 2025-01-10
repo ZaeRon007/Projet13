@@ -14,9 +14,7 @@ import { sessionService } from '../../services/session.service';
 export class LoginComponent {
 
 
-  constructor(private userService: UserService,
-    private router: Router,
-    private sessionService: sessionService) {
+  constructor(private userService: UserService) {
 
   }
 
