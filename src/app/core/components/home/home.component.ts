@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { sessionService } from '../../services/session.service';
 
 @Component({
   selector: 'app-home',
@@ -8,5 +9,16 @@ import { Component } from '@angular/core';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
+
+  admin!: boolean;
+
+  constructor(private sessionService: sessionService){
+    if (sessionService.getConnectedUser().role == 'admin')
+      this.admin = true;
+    else
+      this.admin = false;
+  }
+
+
 
 }

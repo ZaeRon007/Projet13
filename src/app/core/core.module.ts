@@ -10,16 +10,16 @@ import { MatInputModule } from '@angular/material/input';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
-import { ChatComponent } from "./components/chat/chat.component";
 import { LoginComponent } from "./components/login/login.component";
 import { HomeComponent } from './components/home/home.component';
+import { TalkjsChatComponent } from "./components/talkjs-chat/talkjs-chat.component";
 
 
 @NgModule({
     declarations: [
-      ChatComponent,
       LoginComponent,
-      HomeComponent
+      HomeComponent,
+      TalkjsChatComponent
     ],
     imports: [
       CommonModule,

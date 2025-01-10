@@ -21,4 +21,8 @@ export class sessionService {
         this.users = inputUsers;
     }
 
+    getConnectedUser(): userEntity {
+        return this.user;
+    }
+
 }
