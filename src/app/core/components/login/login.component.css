@@ -19,3 +19,12 @@ mat-card {
     --mdc-filled-button-disabled-container-color: grey;
     --mdc-elevated-card-container-elevation: none;
 }
+
+mat-form-field {
+    width: 250px;
+}
+
+.error {
+    color: red;
+    margin-bottom: 20px;
+}

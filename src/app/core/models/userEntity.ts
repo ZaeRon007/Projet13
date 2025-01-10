@@ -1,4 +1,8 @@
 export class userEntity {
-    email!: string;
+    id!: number;
+    username!: string;
     password!: string;
+    email!: string;
+    pictureUrl!: string;
+    role!: string;
 }
