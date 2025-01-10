@@ -1,28 +1,31 @@
-import {Injectable} from '@angular/core';
+import { Injectable } from '@angular/core';
 import { userEntity } from '../models/userEntity';
-import { userLogin } from '../models/dto/userLogin';
 
 @Injectable({
     providedIn: 'root'
 })
 export class sessionService {
 
-    private user: userEntity = new userEntity();
-    private users: userEntity[] = [];
+    user: userEntity = {
+        id: '',
+        username: '',
+        password: '',
+        email: '',
+        pictureUrl: '',
+        role: '',
+    }
+    users: userEntity[] = [];
 
     constructor() {
     }
 
     logInUser(inputUser: userEntity): void {
+        console.log('logIn user:', inputUser);
         this.user = inputUser;
     }
 
     saveConnectedUsers(inputUsers: userEntity[]): void {
+        console.log('saveConnectedUsers user:', inputUsers);
         this.users = inputUsers;
     }
-
-    getConnectedUser(): userEntity {
-        return this.user;
-    }
-
 }

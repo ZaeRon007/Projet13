@@ -31,7 +31,7 @@ export class UserService {
                     this.sessionService.logInUser(user);
                     this.sessionService.saveConnectedUsers(users);
                     if (user.role === this.admin) {
-                        this.router.navigate(['chat']);
+                        this.router.navigate(['contact']);
                     } else {
                         this.router.navigate(['home']);
                     }
@@ -43,7 +43,7 @@ export class UserService {
                 return true;
             }
         })
-        return true;
+        return false;
     }
 
 }

@@ -10,15 +10,4 @@ import { sessionService } from '../../services/session.service';
 })
 export class HomeComponent {
 
-  admin!: boolean;
-
-  constructor(private sessionService: sessionService){
-    if (sessionService.getConnectedUser().role == 'admin')
-      this.admin = true;
-    else
-      this.admin = false;
-  }
-
-
-
 }

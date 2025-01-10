@@ -1,11 +1,4 @@
 <img src="assets/YourCarYourWay.png" alt="YourCarYourWay logo">
 <a [routerLink]="['/contact']">
-    <button class="center" mat-flat-button color="primary" type="submit">
-        <p *ngIf="!admin">
-            Contacter le support
-        </p>
-        <p *ngIf="admin">
-            Contacter les clients
-        </p>
-    </button>
+    <button class="center" mat-flat-button color="primary" type="submit">Contacter le support</button>
 </a>
