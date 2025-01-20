@@ -10,6 +10,12 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
+## How to login
+
+Locate file src/assests/users.json. Two users are configured, you can define multiples users if needed. 
+
+In the application, email and password are used to login.
+
 ## Improvements
 
 ### Setup database : 
