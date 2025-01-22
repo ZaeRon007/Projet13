@@ -14,5 +14,13 @@
       "email": "pere.ducrass@gmail.com",
       "pictureUrl": "assets/pereDucrass.png",
       "role": "default"
+    },
+    {
+      "id": "2",
+      "username": "john",
+      "password": "test1234!",
+      "email": "john.doe@gmail.com",
+      "pictureUrl": "assets/pereDucrass.png",
+      "role": "default"
     }
 ]
